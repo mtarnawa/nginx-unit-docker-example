@@ -1,0 +1,15 @@
+{
+    "listeners": {
+        "*:8300": {
+            "application": "foobar"
+        }
+    },
+    "applications": {
+        "foobar": {
+            "type": "python",
+            "workers": 10,
+            "path": "/www/foobar",
+            "module": "wsgi"
+        }
+    }
+}
